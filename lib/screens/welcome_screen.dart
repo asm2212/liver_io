@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:liver_io/utils/constants.dart';
+import 'package:liver_io/screens/home_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -16,12 +17,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       backgroundColor: Constants.backgroundColor,
       body: SingleChildScrollView(
         child: Container(
-          color: Constants.backgroundColor, 
+          color: Constants.backgroundColor,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: media.width * 1.7, 
+                height: media.width * 1.67, 
                 child: GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
@@ -33,7 +34,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   itemCount: 6, 
                   itemBuilder: (context, index) {
                     return Transform.rotate(
-                      angle: -0.1,
+                      angle: -0.1, // Slightly inclined
                       child: Image.asset(
                         'assets/images/wel${index + 1}.png', 
                         fit: BoxFit.cover,
@@ -42,15 +43,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   },
                 ),
               ),
-              // SizedBox(height: media.height * 0.02),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15.0,), 
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 15.0,
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text.rich(
-                      TextSpan(
+                      TextSpan(     
                         children: [
                           TextSpan(
                             text: 'Liver.',
@@ -71,7 +73,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ],
                       ),
                     ),
-                    
+                
                     Text(
                       "Stream, watch other games streams and play games in one app",
                       style: TextStyle(
@@ -83,7 +85,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     SizedBox(height: media.height * 0.02),
                     InkWell(
                       onTap: () {
-                        
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomeScreen(),
+                          ),
+                        );
                       },
                       child: Container(
                         width: media.width * 0.8,
