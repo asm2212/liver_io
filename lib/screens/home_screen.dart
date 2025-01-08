@@ -9,7 +9,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex = 0; 
+  int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -129,6 +129,288 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
+            SizedBox(height: media.height * 0.02),
+            if (selectedIndex == 0)
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      Image.asset(
+                        "assets/images/l1.png",
+                        width: double.infinity,
+                        height: media.height * 0.25,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 10,
+                        left: 10,
+                        child: Container(
+                          width: media.width * 0.2,
+                          height: media.height * 0.03,
+                          decoration: BoxDecoration(
+                            color: Constants.red,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Live",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Constants.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Image.asset(
+                        "assets/images/pu1.png",
+                        width: 40,
+                        height: 40,
+                      ),
+                      SizedBox(width: 10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Carry is Live",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Constants.white,
+                            ),
+                          ),
+                          
+                          Text(
+                            "234k views",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Constants.primaryText,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                   Stack(
+                    children: [
+                      Image.asset(
+                        "assets/images/l2.png",
+                        width: double.infinity,
+                        height: media.height * 0.25,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 10,
+                        left: 10,
+                        child: Container(
+                          width: media.width * 0.2,
+                          height: media.height * 0.03,
+                          decoration: BoxDecoration(
+                            color: Constants.red,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Live",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Constants.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                   const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Image.asset(
+                        "assets/images/pu1.png",
+                        width: 40,
+                        height: 40,
+                      ),
+                      SizedBox(width: 10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "John is Live",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Constants.white,
+                            ),
+                          ),
+                          
+                          Text(
+                            "24k views",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Constants.primaryText,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+                 SizedBox(height: media.height * 0.02),
+               if (selectedIndex == 1)
+                    Column(
+                children: [
+                    Row(
+                children: [
+                 Container(
+                      width: media.width * 0.45,
+                    height: media.height * 0.2,
+                    decoration: BoxDecoration(
+                      color: Constants.backgroundColor,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child:  Image.asset(
+                    "assets/images/ch1.png",
+                    width: media.width * 0.44,
+                    height: media.height * 0.19,
+                     
+                  ),
+                  ),
+                  Spacer(),
+                   Container(
+                      width: media.width * 0.45,
+                    height: media.height * 0.2,
+                    decoration: BoxDecoration(
+                      color: Constants.backgroundColor,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child:  Image.asset(
+                    "assets/images/ch2.png",
+                    width: media.width * 0.44,
+                    height: media.height * 0.19,
+                  ),
+                  ),
+                ],
+               ),
+                SizedBox(height: media.height*0.02,),
+                  Stack(
+                    children: [
+                      Image.asset(
+                        "assets/images/tl1.png",
+                        width: double.infinity,
+                        height: media.height * 0.25,
+                        fit: BoxFit.cover,
+                      ),
+                      
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Image.asset(
+                        "assets/images/pu1.png",
+                        width: 40,
+                        height: 40,
+                      ),
+                      SizedBox(width: 10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "scOut is Live",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Constants.white,
+                            ),
+                          ),
+                          
+                          Text(
+                            "234k views",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Constants.primaryText,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                   Stack(
+                    children: [
+                      Image.asset(
+                        "assets/images/tl2.png",
+                        width: double.infinity,
+                        height: media.height * 0.25,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 10,
+                        left: 10,
+                        child: Container(
+                          width: media.width * 0.2,
+                          height: media.height * 0.03,
+                          decoration: BoxDecoration(
+                            color: Constants.red,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Live",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Constants.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                   const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Image.asset(
+                        "assets/images/pu1.png",
+                        width: 40,
+                        height: 40,
+                      ),
+                      SizedBox(width: 10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Johnthan gaming",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Constants.white,
+                            ),
+                          ),
+                          
+                          Text(
+                            "300k views",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Constants.primaryText,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
           ],
         ),
       ),
