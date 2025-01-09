@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liver_io/screens/live_stream_screen.dart';
 import 'package:liver_io/utils/constants.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -144,20 +145,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -185,7 +196,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "234k views",
                             style: TextStyle(
@@ -198,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   const SizedBox(height: 10),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/l2.png",
@@ -209,20 +219,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -230,7 +250,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   const SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
@@ -250,7 +270,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "24k views",
                             style: TextStyle(
@@ -264,43 +283,44 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-                 SizedBox(height: media.height * 0.02),
-               if (selectedIndex == 1)
-                    Column(
+            SizedBox(height: media.height * 0.02),
+            if (selectedIndex == 1)
+              Column(
                 children: [
-                    Row(
-                children: [
-                 Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch1.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                     
+                  Row(
+                    children: [
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch1.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch2.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                    ],
                   ),
+                  SizedBox(
+                    height: media.height * 0.02,
                   ),
-                  Spacer(),
-                   Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch2.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                  ),
-                  ),
-                ],
-               ),
-                SizedBox(height: media.height*0.02,),
                   Stack(
                     children: [
                       Image.asset(
@@ -309,7 +329,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: media.height * 0.25,
                         fit: BoxFit.cover,
                       ),
-                      
                     ],
                   ),
                   const SizedBox(height: 10),
@@ -332,7 +351,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "234k views",
                             style: TextStyle(
@@ -345,7 +363,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   const SizedBox(height: 10),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/tl2.png",
@@ -356,20 +374,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -377,7 +405,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   const SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
@@ -397,7 +425,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "300k views",
                             style: TextStyle(
@@ -411,46 +438,46 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-                SizedBox(height: media.height * 0.02),
-               if (selectedIndex == 2)
-                    Column(
+            SizedBox(height: media.height * 0.02),
+            if (selectedIndex == 2)
+              Column(
                 children: [
-                    Row(
-                children: [
-                 Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch1.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                     
+                  Row(
+                    children: [
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch1.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch3.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                    ],
                   ),
+                  SizedBox(
+                    height: media.height * 0.02,
                   ),
-                  Spacer(),
-                   Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch3.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                  ),
-                  ),
-                ],
-               ),
-                SizedBox(height: media.height*0.02,),
-                 
                   const SizedBox(height: 10),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/tl2.png",
@@ -461,20 +488,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -482,7 +519,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   const SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
@@ -502,7 +539,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "300k views",
                             style: TextStyle(
@@ -514,7 +550,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/tl1.png",
@@ -525,20 +561,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -566,7 +612,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "234k views",
                             style: TextStyle(
@@ -580,45 +625,45 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-                       SizedBox(height: media.height * 0.02),
-               if (selectedIndex == 3)
-                    Column(
+            SizedBox(height: media.height * 0.02),
+            if (selectedIndex == 3)
+              Column(
                 children: [
-                    Row(
-                children: [
-                 Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch1.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                     
+                  Row(
+                    children: [
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch1.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        width: media.width * 0.45,
+                        height: media.height * 0.2,
+                        decoration: BoxDecoration(
+                          color: Constants.backgroundColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Image.asset(
+                          "assets/images/ch4.png",
+                          width: media.width * 0.44,
+                          height: media.height * 0.19,
+                        ),
+                      ),
+                    ],
                   ),
+                  SizedBox(
+                    height: media.height * 0.02,
                   ),
-                  Spacer(),
-                   Container(
-                      width: media.width * 0.45,
-                    height: media.height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Constants.backgroundColor,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child:  Image.asset(
-                    "assets/images/ch4.png",
-                    width: media.width * 0.44,
-                    height: media.height * 0.19,
-                  ),
-                  ),
-                ],
-               ),
-                SizedBox(height: media.height*0.02,),
-                 
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/cl.png",
@@ -629,20 +674,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -650,7 +705,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   const SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
@@ -670,7 +725,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "220k views",
                             style: TextStyle(
@@ -682,7 +736,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         "assets/images/tl1.png",
@@ -693,20 +747,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       Positioned(
                         top: 10,
                         left: 10,
-                        child: Container(
-                          width: media.width * 0.2,
-                          height: media.height * 0.03,
-                          decoration: BoxDecoration(
-                            color: Constants.red,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Live",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Constants.white,
-                                fontWeight: FontWeight.bold,
+                        child: InkWell(
+                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LiveStreamScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: media.width * 0.2,
+                            height: media.height * 0.03,
+                            decoration: BoxDecoration(
+                              color: Constants.red,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Live",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Constants.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -734,7 +798,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Constants.white,
                             ),
                           ),
-                          
                           Text(
                             "234k views",
                             style: TextStyle(
