@@ -90,95 +90,180 @@ class _LiveStreamScreenState extends State<LiveStreamScreen> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: media.height * 0.05,
-              ),
-              Row(
-                children: [
-                  Image.asset(
-                    "assets/images/pu1.png",
-                    width: 40,
-                    height: 40,
-                  ),
-                  SizedBox(width: 10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+              // SizedBox(
+              //   height: media.height * 0.2,
+              // ),
+              Spacer(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 25,horizontal: 15),
+                child: Column(
                     children: [
-                      Text(
-                        "Carry is Live",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Constants.white,
-                        ),
-                      ),
-                      Text(
-                        "234k views",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Constants.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: media.height * 0.02,
-              ),
-              Row(
-                children: [
-                  Container(
-                    height: media.height * 0.06,
-                    width: media.width * 0.6,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Constants.white,
-                        width: 1.5,
-                      ),
-                      borderRadius: BorderRadius.circular(26),
+                        Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/hate.png",
+                      width: 40,
+                      height: 40,
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        children: [
-                          Text(
-                            "Add chat...",
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Constants.white,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    SizedBox(width: 10),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Hater",
+                          style: TextStyle(
+                            fontSize: 15,
+                          
+                            color: Constants.white,
                           ),
-                          Spacer(),
-                          Container(
-                              height: 36,
-                              width: 36,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Constants.red,
-                              ),
-                              child: Icon(
-                                Icons.arrow_forward_ios,
+                        ),
+                        Text(
+                          "are op gameplay",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Constants.white,
+                              fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: media.height * 0.02,
+                ),
+                 Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/out.png",
+                      width: 40,
+                      height: 40,
+                    ),
+                    SizedBox(width: 10),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "scOut Ka jabra fan",
+                          style: TextStyle(
+                            fontSize: 15,
+                          
+                            color: Constants.white,
+                          ),
+                        ),
+                        Text(
+                          "Shout out pls sit big fan",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Constants.white,
+                              fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                 SizedBox(
+                  height: media.height * 0.02,
+                ),
+                Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/pu1.png",
+                      width: 40,
+                      height: 40,
+                    ),
+                    SizedBox(width: 10),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Yt gamer",
+                          style: TextStyle(
+                            fontSize: 15,
+                          
+                            color: Constants.white,
+                          ),
+                        ),
+                        Text(
+                          "This is op",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Constants.white,
+                              fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                 SizedBox(
+                  height: media.height * 0.02,
+                ),
+                             
+                Row(
+                  children: [
+                    Container(
+                      height: media.height * 0.06,
+                      width: media.width * 0.6,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Constants.white,
+                          width: 1.5,
+                        ),
+                        borderRadius: BorderRadius.circular(26),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Text(
+                              "Add chat...",
+                              style: TextStyle(
+                                fontSize: 15,
                                 color: Constants.white,
-                              ))
-                        ],
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Spacer(),
+                            Container(
+                                height: 36,
+                                width: 36,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Constants.red,
+                                ),
+                                child: Icon(
+                                  Icons.arrow_forward_ios,
+                                  color: Constants.white,
+                                ))
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(width: media.width * 0.05),
-                  Container(
-                    height: 45,
-                    width: 45,
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                         color: Constants.red,
-                    ),
+                    // SizedBox(width: media.width * 0.05),
+                    Spacer(),
+                    Container(
+                      height: 45,
+                      width: 45,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                           color: Constants.red,
+                      ),
                     
-                    )
-                ],
+                      child: Icon(
+                        Icons.add,
+                        color: Constants.white,
+                        size: 30,
+                      )
+                      ),
+                
+                  ],
+                ),
+                    ],
+                ),
               ),
-
+               
             ],
           ),
         ],
