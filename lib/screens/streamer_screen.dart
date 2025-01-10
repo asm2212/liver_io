@@ -10,6 +10,7 @@ class StreamerScreen extends StatefulWidget {
 
 class _StreamerScreenState extends State<StreamerScreen> {
   String _selectedOption = "Live Stream";
+  bool _isFollowed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -98,20 +99,27 @@ class _StreamerScreenState extends State<StreamerScreen> {
                         ),
                       ),
                       SizedBox(height: 8.0),
-                      Container(
-                        height: media.height * 0.035,
-                        width: media.width * 0.2,
-                        decoration: BoxDecoration(
-                          color: Constants.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Follow",
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Constants.red,
-                              fontWeight: FontWeight.bold,
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _isFollowed = !_isFollowed;
+                          });
+                        },
+                        child: Container(
+                          height: media.height * 0.035,
+                          width: media.width * 0.2,
+                          decoration: BoxDecoration(
+                            color: _isFollowed? Constants.white : Constants.red,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Center(
+                            child: Text(
+                             _isFollowed ? "Follow" : "Followed",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color:_isFollowed? Constants.red :Constants.white,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),

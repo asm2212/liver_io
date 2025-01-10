@@ -1,0 +1,1 @@
+ /home/asmare/Desktop/project/liver_io/.dart_tool/flutter_build/daa982108473a3d89c5bcc1f9feb86cb/native_assets.yaml: 
