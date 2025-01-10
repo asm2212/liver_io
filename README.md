@@ -10,7 +10,9 @@ Liver.io is a live streaming platform that allows users to stream and watch live
 - **📀 Video Archives**: Access past live streams anytime.
 
 ## Screenshots
-
+![lo1](https://github.com/user-attachments/assets/97aecdda-60de-4ae1-badf-c741d3af5384)
+![lo2](https://github.com/user-attachments/assets/7595a8d4-d9ae-43c8-b840-2fe4a1f5c53d)
+![lo3](https://github.com/user-attachments/assets/b7eb40e9-be10-474c-910a-d86be1371afa)
 
 ## 🚀 Getting Started
 
