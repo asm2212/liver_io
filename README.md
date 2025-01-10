@@ -1,16 +1,58 @@
-# liver_io
+# Liver.io
 
-A new Flutter project.
+Liver.io is a live streaming platform that allows users to stream and watch live videos. Our mission is to provide a seamless and engaging live streaming experience for both streamers and viewers.
+
+## Features
+
+- **Live Streaming**: Stream high-quality live videos.
+- **Viewer Interaction**: Engage with your audience in real-time through live chat.
+- **Follow and Notifications**: Follow your favorite streamers and get notified when they go live.
+- **Video Archives**: Access past live streams anytime.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter](https://flutter.dev/docs/get-started/install) - Make sure you have Flutter installed on your machine.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/asm2212/liver.io.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd liver.io
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    flutter pub get
+    ```
+
+4. Run the application:
+
+    ```bash
+    flutter run
+    ```
+
+## Contributing
+
+We welcome contributions! To get started:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License. 
+
